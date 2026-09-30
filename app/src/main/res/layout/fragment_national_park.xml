@@ -12,7 +12,7 @@
         android:id="@+id/park_name"
         android:text="Park Name"
         android:textAppearance="?attr/textAppearanceListItem"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -22,7 +22,7 @@
         android:id="@+id/park_description"
         android:text="Park Description"
         android:textAppearance="?attr/textAppearanceListItem"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/park_name"
         app:layout_constraintStart_toStartOf="parent" />
@@ -47,12 +47,12 @@
     <!-- TODO: Add location or other details -->
     <TextView
         android:id="@+id/park_location"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="64dp"
         android:text="Park Location"
         android:textAppearance="?attr/textAppearanceListItem"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/park_name" />
+        app:layout_constraintStart_toEndOf="@+id/park_name"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

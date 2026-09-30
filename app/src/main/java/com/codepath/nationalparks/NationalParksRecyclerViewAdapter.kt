@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.codepath.nationalparks.R.id
 
 /**
@@ -49,6 +50,11 @@ class NationalParksRecyclerViewAdapter(
         holder.mParkDescription.text = park.description
 
         // TODO: Step 4c - Use Glide to load the first image
+        val imageUrl = park.imageUrl
+        Glide.with(holder.mView)
+            .load(imageUrl)
+            .centerInside()
+            .into(holder.mParkImage)
 
 
         // Sets up click listener for this park item
